@@ -1,0 +1,22 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+using namespace std;
+
+void main()
+{
+	float precio, descuento, total;
+
+	do
+	{
+		cout<<" Ingrese el precio: ";
+		cin>> precio;
+	}
+	while(precio<0);
+
+	descuento = precio*0.5;
+	total = descuento;
+	cout<<" El total a pagar es: "<<total;
+	getch();
+}
